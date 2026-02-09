@@ -1,5 +1,13 @@
 notas = [ 10.0 , 5.0 , 3.0 ]
 
+''' 
+Para calcular a média de notas passadas por uma lista
+lista: list, default [0]
+Lista com as notas para calcular a média
+return = calculo: float
+Média calculada
+'''
+
 # a nossa função recebe uma lista do tipo list e retorna uma variável do tipo float
 def media(lista: list) -> float:
   calculo = sum(lista) / len(lista)
@@ -15,6 +23,7 @@ def cal_notas(notas: list)->None:
     calc = media(notas)
     status_aprovacao(calc)
 
-cal_notas(notas)
+cal_notas(notas= notas)
+
 
 
